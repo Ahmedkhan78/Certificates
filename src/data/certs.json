@@ -45,7 +45,7 @@
     {
       "title": "lab-Linux File System",
       "link": "https://app.cybrary.it/profile/Khan_Ahmed4504?tab=cert-completion&cert=CC-06718e24-b5aa-4f30-9cca-938b74c5049b",
-      "image": "/images/cybrary/Lab-LFSbasic.png"
+      "image": "/images/cybrary/lab-lfs.png"
     },
     {
       "title": "lab-Linux CLI",
@@ -67,22 +67,22 @@
     {
       "title": "JavaScript Basics",
       "link": "https://www.hackerrank.com/certificates/iframe/7a33a6af9f38",
-      "image": "/images/hackerrank/Javascriptbasic.png"
+      "image": "/images/hackerrank/jsbasic.png"
     },
     {
       "title": "JavaScript Intermediate",
       "link": "https://www.hackerrank.com/certificates/iframe/0bc5f14c7af7",
-      "image": "/images/hackerrank/javascriptintermediate.png"
+      "image": "/images/hackerrank/jsintermediate.png"
     },
     {
       "title": "NodeJS Basics",
       "link": "https://www.hackerrank.com/certificates/iframe/7374454a4009",
-      "image": "/images/hackerrank/Node-basic.png"
+      "image": "/images/hackerrank/Nodebasic.png"
     },
     {
       "title": "NodeJS intermediate",
       "link": "https://www.hackerrank.com/certificates/iframe/399c85b4c678",
-      "image": "/images/hackerrank/Node-intermediate.png"
+      "image": "/images/hackerrank/Nodeintermediate.png"
     },
     {
       "title": "CSS",
