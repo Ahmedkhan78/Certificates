@@ -1,0 +1,127 @@
+{
+  "FreeCodeCamp": [
+    {
+      "title": "Responsive Web Design",
+      "link": "https://www.freecodecamp.org/certification/zeprox/responsive-web-design",
+      "image": "/images/fcc/responsivewebdesign.png"
+    },
+    {
+      "title": "JavaScript Algorithms and Data Structures(Beta)",
+      "link": "https://www.freecodecamp.org/certification/zeprox/javascript-algorithms-and-data-structures-v8",
+      "image": "/images/fcc/jsdsa.png"
+    },
+    {
+      "title": "Front End Development Libraries",
+      "link": "https://www.freecodecamp.org/certification/zeprox/front-end-development-libraries",
+      "image": "/images/fcc/FrontEndDevelopementLibraries-V8.png"
+    },
+    {
+      "title": "Data Visualization",
+      "link": "https://www.freecodecamp.org/certification/zeprox/data-visualization",
+      "image": "/images/fcc/DataVisualisation-V8.png"
+    },
+    {
+      "title": "Relational Database v8",
+      "link": "https://www.freecodecamp.org/certification/zeprox/relational-database-v8",
+      "image": "/images/fcc/relationaldatabase-V8.png"
+    },
+    {
+      "title": "Scientific Computing with Python v7",
+      "link": "https://www.freecodecamp.org/certification/zeprox/scientific-computing-with-python-v7",
+      "image": "/images/fcc/python.png"
+    }
+  ],
+  "Cybrary": [
+    {
+      "title": "Comptia Security+ (601)",
+      "link": "https://app.cybrary.it/profile/Khan_Ahmed4504?tab=cert-completion&cert=CC-08b46570-baa6-4931-a64a-ae16d8a7d014",
+      "image": "/images/cybrary/comptiasecurity+(601).png"
+    },
+    {
+      "title": "Penetration Testing and Ethical Hacking",
+      "link": "https://app.cybrary.it/profile/Khan_Ahmed4504?tab=cert-completion&cert=CC-9615a9d8-204e-450f-b8bd-64fe1e4f0210",
+      "image": "/images/cybrary/Pentest.png"
+    },
+    {
+      "title": "lab-Linux File System",
+      "link": "https://app.cybrary.it/profile/Khan_Ahmed4504?tab=cert-completion&cert=CC-06718e24-b5aa-4f30-9cca-938b74c5049b",
+      "image": "/images/cybrary/lab-LFS-basic.png"
+    },
+    {
+      "title": "lab-Linux CLI",
+      "link": "https://app.cybrary.it/profile/Khan_Ahmed4504?tab=cert-completion&cert=CC-05b12b38-7d5d-42ae-b7c5-2faf6744e682",
+      "image": "/images/cybrary/lab-LClibasic.png"
+    },
+    {
+      "title": "lab-Windows CLI",
+      "link": "https://app.cybrary.it/profile/Khan_Ahmed4504?tab=cert-completion&cert=CC-5211002a-563a-4006-a477-791640a9f62b",
+      "image": "/images/cybrary/lab-WClibasic.png"
+    },
+    {
+      "title": "lab-Windows File Systems",
+      "link": "https://app.cybrary.it/profile/Khan_Ahmed4504?tab=cert-completion&cert=CC-781a53b9-00bd-4300-b5d6-8aa6b56267b9",
+      "image": "/images/cybrary/lab-WFSbasic.png"
+    }
+  ],
+  "HackerRank": [
+    {
+      "title": "JavaScript Basics",
+      "link": "https://www.hackerrank.com/certificates/iframe/7a33a6af9f38",
+      "image": "/images/hackerrank/javascriptbasics.png"
+    },
+    {
+      "title": "JavaScript Intermediate",
+      "link": "https://www.hackerrank.com/certificates/iframe/0bc5f14c7af7",
+      "image": "/images/hackerrank/javascriptintermediate.png"
+    },
+    {
+      "title": "NodeJS Basics",
+      "link": "https://www.hackerrank.com/certificates/iframe/7374454a4009",
+      "image": "/images/hackerrank/Node-basics.png"
+    },
+    {
+      "title": "NodeJS intermediate",
+      "link": "https://www.hackerrank.com/certificates/iframe/399c85b4c678",
+      "image": "/images/hackerrank/Node-intermediate.png"
+    },
+    {
+      "title": "CSS",
+      "link": "https://www.hackerrank.com/certificates/iframe/08abae9214f3",
+      "image": "/images/hackerrank/Css.png"
+    },
+    {
+      "title": "Problem Solving Basic",
+      "link": "https://www.hackerrank.com/certificates/iframe/ae2254495bf5",
+      "image": "/images/hackerrank/ProblemSolvingBasic.png"
+    }
+  ],
+  "NextJS": [
+    {
+      "title": "React Basic",
+      "link": "https://nextjs.org/learn/certificate?course=react-foundations&user=70628&certId=react-foundations-70628-1766444047648",
+      "image": "/images/Nextjs/React.png"
+    },
+    {
+      "title": "App Router",
+      "link": "https://nextjs.org/learn/certificate?course=dashboard-app&user=70628&certId=dashboard-app-70628-1766443033251",
+      "image": "/images/Nextjs/AppRouter.png"
+    },
+    {
+      "title": "Page Router",
+      "link": "https://nextjs.org/learn/certificate?course=pages-router&user=70628&certId=pages-router-70628-1766443069803",
+      "image": "/images/Nextjs/PageRouter.png"
+    }
+  ],
+  "Networking": [
+    {
+      "title": "CCNA",
+      "link": "Na",
+      "image": "/images/Networking/CCNA.png"
+    },
+    {
+      "title": "Network Defense Essentials",
+      "link": "NA",
+      "image": "/images/Networking/NDE(EC).png"
+    }
+  ]
+}
