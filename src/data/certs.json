@@ -40,12 +40,12 @@
     {
       "title": "Penetration Testing and Ethical Hacking",
       "link": "https://app.cybrary.it/profile/Khan_Ahmed4504?tab=cert-completion&cert=CC-9615a9d8-204e-450f-b8bd-64fe1e4f0210",
-      "image": "/images/cybrary/Pentest.png"
+      "image": "/images/cybrary/PenTest.png"
     },
     {
       "title": "lab-Linux File System",
       "link": "https://app.cybrary.it/profile/Khan_Ahmed4504?tab=cert-completion&cert=CC-06718e24-b5aa-4f30-9cca-938b74c5049b",
-      "image": "/images/cybrary/lab-LFS-basic.png"
+      "image": "/images/cybrary/lab-LFSbasic.png"
     },
     {
       "title": "lab-Linux CLI",
@@ -67,7 +67,7 @@
     {
       "title": "JavaScript Basics",
       "link": "https://www.hackerrank.com/certificates/iframe/7a33a6af9f38",
-      "image": "/images/hackerrank/javascriptbasics.png"
+      "image": "/images/hackerrank/Javascriptbasics.png"
     },
     {
       "title": "JavaScript Intermediate",
@@ -77,7 +77,7 @@
     {
       "title": "NodeJS Basics",
       "link": "https://www.hackerrank.com/certificates/iframe/7374454a4009",
-      "image": "/images/hackerrank/Node-basics.png"
+      "image": "/images/hackerrank/Node-basic.png"
     },
     {
       "title": "NodeJS intermediate",
