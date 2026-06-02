@@ -96,8 +96,23 @@
     },
     {
       "title": "Problem Solving Basic",
-      "link": "https://www.hackerrank.com/certificates/iframe/ae2254495bf5",
+      "link": "https://www.hackerrank.com/certificates/iframe/60e619d463b6",
       "image": "/images/hackerrank/ProblemSolvingBasic.png"
+    },
+    {
+      "title": "Problem Solving Advanced",
+      "link": "https://www.hackerrank.com/certificates/iframe/42acc0ad960a",
+      "image": "/images/hackerrank/problemsolvingint.png"
+    },
+    {
+      "title": "Python",
+      "link": "https://www.hackerrank.com/certificates/iframe/473baa9f757d",
+      "image": "/images/hackerrank/pythonbasic.png"
+    },
+    {
+      "title": "REST API",
+      "link": "https://www.hackerrank.com/certificates/iframe/f3546ce91c17",
+      "image": "/images/hackerrank/restapi.png"
     }
   ],
   "NextJS": [
@@ -115,6 +130,71 @@
       "title": "Page Router",
       "link": "https://nextjs.org/learn/certificate?course=pages-router&user=70628&certId=pages-router-70628-1766443069803",
       "image": "/images/Nextjs/PageRouter.png"
+    }
+  ],
+  "AI Kaggle": [
+    {
+      "title": "Intro To Programming",
+      "link": "https://www.kaggle.com/learn/certification/ahmedhasankhan/intro-to-programming",
+      "image": "/images/AI-Kaggle/intro-programming.png"
+    },
+    {
+      "title": "Python",
+      "link": "https://www.kaggle.com/learn/certification/ahmedhasankhan/python",
+      "image": "/images/AI-Kaggle/python.png"
+    },
+
+    {
+      "title": "Intro To Machine Learning",
+      "link": "https://www.kaggle.com/learn/certification/ahmedhasankhan/intro-to-machine-learning",
+      "image": "/images/AI-Kaggle/intro-machinelearnig.png"
+    },
+
+    {
+      "title": "Pandas",
+      "link": "https://www.kaggle.com/learn/certification/ahmedhasankhan/pandas",
+      "image": "/images/AI-Kaggle/pandas.png"
+    },
+
+    {
+      "title": "Intermediate Machine Learning",
+      "link": "https://www.kaggle.com/learn/certification/ahmedhasankhan/intermediate-machine-learning",
+      "image": "/images/AI-Kaggle/intermediate-machinelearning.png"
+    },
+    {
+      "title": "Data Visualization",
+      "link": "https://www.kaggle.com/learn/certification/ahmedhasankhan/data-visualization",
+      "image": "/images/AI-Kaggle/data-visulisation.png"
+    },
+    {
+      "title": "Feature Engineering",
+      "link": "https://www.kaggle.com/learn/certification/ahmedhasankhan/feature-engineering",
+      "image": "/images/AI-Kaggle/feature-engineering.png"
+    },
+    {
+      "title": "SQL",
+      "link": "https://www.kaggle.com/learn/certification/ahmedhasankhan/intro-to-sql",
+      "image": "/images/AI-Kaggle/intro-sql.png"
+    },
+    {
+      "title": "Advanced SQL",
+      "link": "https://www.kaggle.com/learn/certification/ahmedhasankhan/advanced-sql",
+      "image": "/images/AI-Kaggle/advanced-sql.png"
+    },
+    {
+      "title": "Intro To Deep Learning",
+      "link": "https://www.kaggle.com/learn/certification/ahmedhasankhan/intro-to-deep-learning",
+      "image": "/images/AI-Kaggle/intro-deeplearning.png"
+    },
+    {
+      "title": "Computer Vision",
+      "link": "https://www.kaggle.com/learn/certification/ahmedhasankhan/computer-vision",
+      "image": "/images/AI-Kaggle/computer-vision.png"
+    },
+    {
+      "title": "Time Series",
+      "link": "https://www.kaggle.com/learn/certification/ahmedhasankhan/time-series",
+      "image": "/images/AI-Kaggle/time-series.png"
     }
   ],
   "Networking": [
