@@ -96,8 +96,8 @@ const ElectricBorder = ({
   }, []);
 
   const vars = {
-    ["--electric-border-color"]: color,
-    ["--eb-border-width"]: `${thickness}px`,
+    "--electric-border-color": color,
+    "--eb-border-width": `${thickness}px`,
   };
 
   return (
