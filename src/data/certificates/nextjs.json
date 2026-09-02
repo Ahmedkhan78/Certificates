@@ -1,0 +1,26 @@
+[
+  {
+    "id": "nextjs-react-foundations",
+    "title": "React Basic",
+    "image": "/images/Nextjs/React.png",
+    "link": "https://nextjs.org/learn/certificate?course=react-foundations&user=70628&certId=react-foundations-70628-1766444047648",
+    "skills": ["react", "javascript"],
+    "type": "course"
+  },
+  {
+    "id": "nextjs-app-router",
+    "title": "App Router",
+    "image": "/images/Nextjs/AppRouter.png",
+    "link": "https://nextjs.org/learn/certificate?course=dashboard-app&user=70628&certId=dashboard-app-70628-1766443033251",
+    "skills": ["nextjs", "react"],
+    "type": "course"
+  },
+  {
+    "id": "nextjs-page-router",
+    "title": "Page Router",
+    "image": "/images/Nextjs/PageRouter.png",
+    "link": "https://nextjs.org/learn/certificate?course=pages-router&user=70628&certId=pages-router-70628-1766443069803",
+    "skills": ["nextjs", "react"],
+    "type": "course"
+  }
+]

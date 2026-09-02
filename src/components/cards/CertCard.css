@@ -1,0 +1,687 @@
+/* =========================================
+   CERTIFICATE CARD
+========================================= */
+
+.cert-card {
+  --cyan: #00ffff;
+  --blue: #008cff;
+  --purple: #8a2be2;
+  --pink: #ff00cc;
+  --white: #ffffff;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 320px;
+  min-width: 0;
+
+  overflow: hidden;
+  box-sizing: border-box;
+
+  isolation: isolate;
+
+  border: 1px solid rgba(0, 255, 255, 0.18);
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(145deg, rgba(0, 255, 255, 0.055), rgba(255, 0, 200, 0.035)),
+    rgba(5, 6, 10, 0.94);
+
+  box-shadow:
+    0 0 0 1px rgba(0, 255, 255, 0.015),
+    0 12px 35px rgba(0, 0, 0, 0.45);
+
+  transition:
+    transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-color 0.45s ease,
+    box-shadow 0.45s ease;
+}
+
+/* =========================================
+   ANIMATED CYBER BORDER
+========================================= */
+
+.cert-card::before {
+  content: "";
+
+  position: absolute;
+
+  inset: -1px;
+
+  z-index: 5;
+
+  padding: 1px;
+
+  border-radius: inherit;
+
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    rgba(0, 255, 255, 0.15) 40deg,
+    #00ffff 75deg,
+    rgba(255, 255, 255, 0.9) 90deg,
+    transparent 115deg,
+    transparent 175deg,
+    #8a2be2 220deg,
+    #ff00cc 255deg,
+    rgba(255, 255, 255, 0.75) 275deg,
+    transparent 305deg,
+    transparent 360deg
+  );
+
+  /*
+    Only show the gradient on the border.
+  */
+
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+
+  -webkit-mask-composite: xor;
+
+  mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+
+  mask-composite: exclude;
+
+  opacity: 0.42;
+
+  pointer-events: none;
+
+  animation: borderSpin 8s linear infinite;
+
+  transition:
+    opacity 0.45s ease,
+    filter 0.45s ease;
+}
+
+/* =========================================
+   BORDER HOVER
+========================================= */
+
+.cert-card:hover::before {
+  opacity: 1;
+
+  filter: drop-shadow(0 0 3px rgba(0, 255, 255, 0.8))
+    drop-shadow(0 0 8px rgba(138, 43, 226, 0.6))
+    drop-shadow(0 0 14px rgba(255, 0, 200, 0.45));
+}
+
+/* =========================================
+   TOP SCAN LINE
+========================================= */
+
+.cert-card::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -100%;
+
+  width: 70%;
+  height: 1px;
+
+  z-index: 6;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #00ffff,
+    #ffffff,
+    #ff00cc,
+    transparent
+  );
+
+  box-shadow:
+    0 0 6px #00ffff,
+    0 0 12px rgba(255, 0, 200, 0.8);
+
+  opacity: 0.55;
+
+  pointer-events: none;
+
+  animation: cardScan 4.5s linear infinite;
+}
+
+/* =========================================
+   CARD HOVER
+========================================= */
+
+.cert-card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(0, 255, 255, 0.45);
+
+  box-shadow:
+    0 0 15px rgba(0, 255, 255, 0.13),
+    0 0 35px rgba(138, 43, 226, 0.09),
+    0 0 55px rgba(255, 0, 200, 0.06),
+    0 18px 45px rgba(0, 0, 0, 0.6);
+}
+
+/* =========================================
+   IMAGE WRAPPER
+========================================= */
+
+.cert-image-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  /*
+    Fixed height instead of aspect-ratio.
+    Better old-browser compatibility.
+  */
+
+  height: 190px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(135deg, rgba(0, 255, 255, 0.08), rgba(255, 0, 200, 0.05)),
+    #080b10;
+
+  cursor: pointer;
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.cert-image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  max-width: 100%;
+  max-height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition:
+    transform 0.7s cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 0.7s ease;
+}
+
+/* =========================================
+   IMAGE HOVER
+========================================= */
+
+.cert-card:hover .cert-image {
+  transform: scale(1.06);
+
+  filter: brightness(0.72) saturate(1.2) contrast(1.04);
+}
+
+/* =========================================
+   IMAGE OVERLAY
+========================================= */
+
+.image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 255, 0.08),
+    rgba(255, 0, 200, 0.08)
+  );
+
+  opacity: 0;
+
+  transition:
+    opacity 0.35s ease,
+    background 0.35s ease;
+}
+
+.cert-card:hover .image-overlay {
+  opacity: 1;
+
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 255, 0.12),
+    rgba(255, 0, 200, 0.13)
+  );
+}
+
+/* =========================================
+   IMAGE OVERLAY TEXT
+========================================= */
+
+.image-overlay span {
+  padding: 8px 14px;
+
+  border: 1px solid rgba(0, 255, 255, 0.75);
+
+  border-radius: 4px;
+
+  background: rgba(5, 6, 10, 0.92);
+
+  color: #00ffff;
+
+  font-family: monospace;
+
+  font-size: 0.68rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-shadow:
+    0 0 8px #00ffff,
+    0 0 15px rgba(0, 255, 255, 0.45);
+
+  box-shadow:
+    0 0 12px rgba(0, 255, 255, 0.3),
+    inset 0 0 10px rgba(0, 255, 255, 0.05);
+
+  transform: translateY(8px);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.cert-card:hover .image-overlay span {
+  transform: translateY(0);
+
+  box-shadow:
+    0 0 14px rgba(0, 255, 255, 0.5),
+    0 0 25px rgba(255, 0, 200, 0.15),
+    inset 0 0 10px rgba(0, 255, 255, 0.08);
+}
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.cert-card-content {
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+
+  padding: 1rem;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.cert-card-title {
+  position: relative;
+
+  min-height: 48px;
+
+  display: flex;
+
+  align-items: center;
+
+  margin: 0 0 0.65rem;
+
+  font-size: 1.05rem;
+
+  font-weight: 800;
+
+  line-height: 1.35;
+
+  letter-spacing: 0.45px;
+
+  /*
+    LIGHT CYBER COLOR FLOW
+    Cyan -> Blue -> White -> Purple -> Pink -> Cyan
+  */
+
+  background: linear-gradient(
+    90deg,
+    #00ffff 0%,
+    #00ffff 15%,
+    #008cff 28%,
+    #ffffff 42%,
+    #8a2be2 58%,
+    #ff00cc 72%,
+    #ff66dd 82%,
+    #00ffff 100%
+  );
+
+  background-size: 400% 100%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  animation: titleCyberFlow 9s ease-in-out infinite;
+
+  filter: drop-shadow(0 0 4px rgba(0, 255, 255, 0.38));
+
+  transition: filter 0.45s ease;
+}
+
+/* =========================================
+   TITLE HOVER
+========================================= */
+
+.cert-card:hover .cert-card-title {
+  animation-duration: 5s;
+
+  filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.8))
+    drop-shadow(0 0 10px rgba(138, 43, 226, 0.45))
+    drop-shadow(0 0 16px rgba(255, 0, 200, 0.28));
+}
+
+/* =========================================
+   TYPE
+========================================= */
+
+.cert-card-type {
+  display: inline-block;
+
+  width: fit-content;
+
+  margin: 0 0 1rem;
+
+  padding: 3px 8px;
+
+  border-left: 2px solid #ff00cc;
+
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 200, 0.06),
+    rgba(0, 255, 255, 0.025)
+  );
+
+  color: #7df9ff;
+
+  font-family: monospace;
+
+  font-size: 0.68rem;
+
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+
+  text-shadow: 0 0 7px rgba(0, 255, 255, 0.5);
+}
+
+/* =========================================
+   VIEW BUTTON
+========================================= */
+
+.cert-view-btn {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  margin-top: auto;
+
+  padding: 0.7rem 0.8rem;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(0, 255, 255, 0.3);
+
+  border-radius: 5px;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 255, 0.06),
+    rgba(255, 0, 200, 0.035)
+  );
+
+  color: #00ffff;
+
+  font-family: monospace;
+
+  font-size: 0.7rem;
+
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    color 0.35s ease,
+    background 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* =========================================
+   BUTTON SHINE
+========================================= */
+
+.cert-view-btn::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -120%;
+
+  width: 80%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.28),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+
+  transition: left 0.5s ease;
+}
+
+.cert-view-btn:hover::before {
+  left: 130%;
+}
+
+/* =========================================
+   BUTTON HOVER
+========================================= */
+
+.cert-view-btn:hover {
+  color: #05060a;
+
+  background: linear-gradient(90deg, #00ffff, #7df9ff, #8a2be2, #ff00cc);
+
+  border-color: #00ffff;
+
+  box-shadow:
+    0 0 12px rgba(0, 255, 255, 0.45),
+    0 0 25px rgba(255, 0, 200, 0.2);
+}
+
+/* =========================================
+   ARROW
+========================================= */
+
+.btn-arrow {
+  font-size: 1rem;
+
+  transition: transform 0.3s ease;
+}
+
+.cert-view-btn:hover .btn-arrow {
+  transform: translateX(5px);
+}
+
+/* =========================================
+   DISABLED
+========================================= */
+
+.cert-disabled {
+  color: #555;
+
+  border-color: rgba(255, 255, 255, 0.08);
+
+  background: rgba(255, 255, 255, 0.02);
+
+  cursor: default;
+}
+
+.cert-disabled:hover {
+  color: #555;
+
+  border-color: rgba(255, 255, 255, 0.08);
+
+  background: rgba(255, 255, 255, 0.02);
+
+  box-shadow: none;
+}
+
+.cert-disabled::before {
+  display: none;
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+/*
+   Border rotates continuously.
+*/
+
+@keyframes borderSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*
+   Thin scan line moves across the card.
+*/
+
+@keyframes cardScan {
+  0% {
+    left: -100%;
+  }
+
+  100% {
+    left: 150%;
+  }
+}
+
+/*
+   Smooth LIGHT color transition.
+   No dark color is introduced.
+*/
+
+@keyframes titleCyberFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 100% 50%;
+  }
+
+  50% {
+    background-position: 200% 50%;
+  }
+
+  75% {
+    background-position: 300% 50%;
+  }
+
+  100% {
+    background-position: 400% 50%;
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1200px) {
+  .cert-card {
+    max-width: 340px;
+  }
+
+  .cert-image-wrapper {
+    height: 200px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .cert-card {
+    width: 100%;
+
+    max-width: 360px;
+  }
+
+  .cert-image-wrapper {
+    height: 210px;
+  }
+
+  .cert-card-title {
+    min-height: 0;
+
+    font-size: 1rem;
+
+    line-height: 1.4;
+  }
+
+  .cert-card-content {
+    padding: 0.9rem;
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .cert-card::before,
+  .cert-card::after,
+  .cert-card-title {
+    animation: none;
+  }
+
+  .cert-card,
+  .cert-image,
+  .image-overlay,
+  .image-overlay span,
+  .cert-view-btn,
+  .btn-arrow {
+    transition: none;
+  }
+}

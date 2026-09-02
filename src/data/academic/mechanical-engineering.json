@@ -1,0 +1,66 @@
+[
+  {
+    "id": "mechanical-engineering-semester-1",
+    "title": "Mechanical Engineering - Semester 1",
+    "image": "/images/Mechanical Engineering/sem-1.png",
+    "link": null,
+    "skills": ["mechanical-engineering"],
+    "type": "academic"
+  },
+  {
+    "id": "mechanical-engineering-semester-2",
+    "title": "Mechanical Engineering - Semester 2",
+    "image": "/images/Mechanical Engineering/sem-2.png",
+    "link": null,
+    "skills": ["mechanical-engineering"],
+    "type": "academic"
+  },
+  {
+    "id": "mechanical-engineering-semester-3",
+    "title": "Mechanical Engineering - Semester 3",
+    "image": "/images/Mechanical Engineering/sem-3.png",
+    "link": null,
+    "skills": ["mechanical-engineering"],
+    "type": "academic"
+  },
+  {
+    "id": "mechanical-engineering-semester-4",
+    "title": "Mechanical Engineering - Semester 4",
+    "image": "/images/Mechanical Engineering/sem-4.png",
+    "link": null,
+    "skills": ["mechanical-engineering"],
+    "type": "academic"
+  },
+  {
+    "id": "mechanical-engineering-semester-5",
+    "title": "Mechanical Engineering - Semester 5",
+    "image": "/images/Mechanical Engineering/sem-5.png",
+    "link": null,
+    "skills": ["mechanical-engineering"],
+    "type": "academic"
+  },
+  {
+    "id": "mechanical-engineering-semester-6",
+    "title": "Mechanical Engineering - Semester 6",
+    "image": "/images/Mechanical Engineering/sem-6.png",
+    "link": null,
+    "skills": ["mechanical-engineering"],
+    "type": "academic"
+  },
+  {
+    "id": "mechanical-engineering-semester-7",
+    "title": "Mechanical Engineering - Semester 7",
+    "image": "/images/Mechanical Engineering/sem-7.png",
+    "link": null,
+    "skills": ["mechanical-engineering"],
+    "type": "academic"
+  },
+  {
+    "id": "mechanical-engineering-semester-8",
+    "title": "Mechanical Engineering - Semester 8",
+    "image": "/images/Mechanical Engineering/sem-8.png",
+    "link": null,
+    "skills": ["mechanical-engineering"],
+    "type": "academic"
+  }
+]

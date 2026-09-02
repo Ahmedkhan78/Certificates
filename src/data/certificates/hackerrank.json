@@ -1,0 +1,106 @@
+[
+  {
+    "id": "hackerrank-javascript-basics",
+    "title": "JavaScript Basics",
+    "image": "/images/hackerrank/jsbasic.png",
+    "link": "https://www.hackerrank.com/certificates/iframe/7a33a6af9f38",
+    "skills": ["javascript"],
+    "type": "certification"
+  },
+  {
+    "id": "hackerrank-javascript-intermediate",
+    "title": "JavaScript Intermediate",
+    "image": "/images/hackerrank/jsintermediate.png",
+    "link": "https://www.hackerrank.com/certificates/iframe/0bc5f14c7af7",
+    "skills": ["javascript"],
+    "type": "certification"
+  },
+  {
+    "id": "hackerrank-nodejs-basics",
+    "title": "NodeJS Basics",
+    "image": "/images/hackerrank/Nodebasic.png",
+    "link": "https://www.hackerrank.com/certificates/iframe/7374454a4009",
+    "skills": ["nodejs", "javascript"],
+    "type": "certification"
+  },
+  {
+    "id": "hackerrank-nodejs-intermediate",
+    "title": "NodeJS Intermediate",
+    "image": "/images/hackerrank/Nodeintermediate.png",
+    "link": "https://www.hackerrank.com/certificates/iframe/399c85b4c678",
+    "skills": ["nodejs", "javascript"],
+    "type": "certification"
+  },
+  {
+    "id": "hackerrank-css",
+    "title": "CSS",
+    "image": "/images/hackerrank/Css.png",
+    "link": "https://www.hackerrank.com/certificates/iframe/08abae9214f3",
+    "skills": ["css"],
+    "type": "certification"
+  },
+  {
+    "id": "hackerrank-react",
+    "title": "React",
+    "image": "/images/hackerrank/react.png",
+    "link": "https://www.hackerrank.com/certificates/iframe/42acc0ad960a",
+    "skills": ["react", "javascript"],
+    "type": "certification"
+  },
+  {
+    "id": "hackerrank-problem-solving-basic",
+    "title": "Problem Solving Basic",
+    "image": "/images/hackerrank/ProblemSolvingBasic.png",
+    "link": "https://www.hackerrank.com/certificates/iframe/ae2254495bf5",
+    "skills": ["problem-solving", "algorithms"],
+    "type": "certification"
+  },
+  {
+    "id": "hackerrank-problem-solving-advanced",
+    "title": "Problem Solving Advanced",
+    "image": "/images/hackerrank/problemsolvingint.png",
+    "link": "https://www.hackerrank.com/certificates/iframe/60e619d463b6",
+    "skills": ["problem-solving", "algorithms", "data-structures"],
+    "type": "certification"
+  },
+  {
+    "id": "hackerrank-python",
+    "title": "Python",
+    "image": "/images/hackerrank/pythonbasic.png",
+    "link": "https://www.hackerrank.com/certificates/iframe/473baa9f757d",
+    "skills": ["python", "programming"],
+    "type": "certification"
+  },
+  {
+    "id": "hackerrank-rest-api",
+    "title": "REST API",
+    "image": "/images/hackerrank/restapi.png",
+    "link": "https://www.hackerrank.com/certificates/iframe/f3546ce91c17",
+    "skills": ["rest-api", "api", "backend"],
+    "type": "certification"
+  },
+  {
+    "id": "hackerrank-sql-basic",
+    "title": "SQL Basic",
+    "image": "/images/hackerrank/sql-B.png",
+    "link": "https://www.hackerrank.com/certificates/iframe/7c89dc934049",
+    "skills": ["sql", "databases"],
+    "type": "certification"
+  },
+  {
+    "id": "hackerrank-sql-intermediate",
+    "title": "SQL Intermediate",
+    "image": "/images/hackerrank/sql-I.png",
+    "link": "https://www.hackerrank.com/certificates/iframe/f998189d4e0d",
+    "skills": ["sql", "databases"],
+    "type": "certification"
+  },
+  {
+    "id": "hackerrank-sql-advanced",
+    "title": "SQL Advanced",
+    "image": "/images/hackerrank/sql-A.png",
+    "link": "https://www.hackerrank.com/certificates/iframe/cc2c5508a3ef",
+    "skills": ["sql", "databases"],
+    "type": "certification"
+  }
+]

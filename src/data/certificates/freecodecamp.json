@@ -1,0 +1,75 @@
+[
+  {
+    "id": "fcc-responsive-web-design",
+    "title": "Responsive Web Design",
+    "image": "/images/fcc/responsivewebdesign.png",
+    "link": "https://www.freecodecamp.org/certification/zeprox/responsive-web-design",
+    "skills": ["html", "css", "responsive-design"],
+    "type": "certification"
+  },
+  {
+    "id": "fcc-javascript-algorithms-v7",
+    "title": "JavaScript Algorithms and Data Structures",
+    "image": "/images/fcc/jsdsav7.png",
+    "link": "https://www.freecodecamp.org/certification/zeprox/javascript-algorithm-and-data-stuctures",
+    "skills": ["javascript", "algorithms", "data-structures"],
+    "type": "certification"
+  },
+
+  {
+    "id": "fcc-javascript-algorithms-v8",
+    "title": "JavaScript Algorithms and Data Structures V8",
+    "image": "/images/fcc/Jsdsav8.png",
+    "link": "https://www.freecodecamp.org/certification/zeprox/javascript-algorithm-and-data-stuctures-v8",
+    "skills": ["javascript", "algorithms", "data-structures"],
+    "type": "certification"
+  },
+  {
+    "id": "fcc-front-end-development-libraries",
+    "title": "Front End Development Libraries",
+    "image": "/images/fcc/FrontEndDevelopementLibraries-V8.png",
+    "link": "https://www.freecodecamp.org/certification/zeprox/front-end-development-libraries",
+    "skills": ["javascript", "react", "frontend"],
+    "type": "certification"
+  },
+  {
+    "id": "fcc-data-visualization",
+    "title": "Data Visualization",
+    "image": "/images/fcc/DataVisualisation-V8.png",
+    "link": "https://www.freecodecamp.org/certification/zeprox/data-visualization",
+    "skills": ["javascript", "data-visualization"],
+    "type": "certification"
+  },
+  {
+    "id": "fcc-relational-database",
+    "title": "Relational Database",
+    "image": "/images/fcc/relationaldatabase-V8.png",
+    "link": "https://www.freecodecamp.org/certification/zeprox/relational-database-v8",
+    "skills": ["sql", "databases"],
+    "type": "certification"
+  },
+  {
+    "id": "fcc-scientific-computing-python",
+    "title": "Scientific Computing with Python",
+    "image": "/images/fcc/python.png",
+    "link": "https://www.freecodecamp.org/certification/zeprox/scientific-computing-with-python-v7",
+    "skills": ["python", "programming"],
+    "type": "certification"
+  },
+  {
+    "id": "fcc-data-analysis-with-python",
+    "title": "Data Analysis with Python",
+    "image": "/images/fcc/Data Analysis.png",
+    "link": "https://www.freecodecamp.org/certification/zeprox/data-analysis-with-python-v7",
+    "skills": ["python", "data-analysis", "pandas", "numpy"],
+    "type": "certification"
+  },
+  {
+    "id": "fcc-information-security-and-quality-assurance",
+    "title": "Information Security and Quality Assurance",
+    "image": "/images/fcc/informationsecurityandqualityassurance.png",
+    "link": "https://www.freecodecamp.org/certification/zeprox/information-security-and-quality-assurance",
+    "skills": ["information-security", "quality-assurance", "javascript"],
+    "type": "certification"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "saylor-introduction-to-programming",
+    "title": "Introduction to Programming",
+    "image": "/images/Saylor/1.intro-prog-1-cert.png",
+    "link": null,
+    "type": "certification"
+  },
+  {
+    "id": "saylor-introduction-to-programming-2",
+    "title": "Introduction to Programming 2",
+    "image": "/images/Saylor/2.intro-prog-2-cert.png",
+    "link": null,
+    "type": "certification"
+  },
+  {
+    "id": "saylor-python",
+    "title": "Python",
+    "image": "/images/Saylor/3.python-cert.png",
+    "link": null,
+    "type": "certification"
+  },
+  {
+    "id": "saylor-cpp",
+    "title": "C++",
+    "image": "/images/Saylor/4.c++-cert.png",
+    "link": null,
+    "type": "certification"
+  },
+  {
+    "id": "saylor-data-structures",
+    "title": "Data Structures",
+    "image": "/images/Saylor/5.dsa-cert.png",
+    "link": null,
+    "type": "certification"
+  },
+  {
+    "id": "saylor-operating-systems",
+    "title": "Operating Systems",
+    "image": "/images/Saylor/13.os-cert.png",
+    "link": null,
+    "type": "certification"
+  }
+]

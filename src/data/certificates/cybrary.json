@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cybrary-comptia-security-plus",
+    "title": "CompTIA Security+ (601)",
+    "image": "/images/cybrary/comptiasecurity+(601).png",
+    "link": "https://app.cybrary.it/profile/Khan_Ahmed4504?tab=cert-completion&cert=CC-08b46570-baa6-4931-a64a-ae16d8a7d014",
+    "skills": ["cybersecurity", "network-security"],
+    "type": "certification"
+  },
+  {
+    "id": "cybrary-penetration-testing",
+    "title": "Penetration Testing and Ethical Hacking",
+    "image": "/images/cybrary/PenTest.png",
+    "link": "https://app.cybrary.it/profile/Khan_Ahmed4504?tab=cert-completion&cert=CC-9615a9d8-204e-450f-b8bd-64fe1e4f0210",
+    "skills": ["cybersecurity", "penetration-testing", "ethical-hacking"],
+    "type": "certification"
+  },
+  {
+    "id": "cybrary-linux-file-system",
+    "title": "Linux File System",
+    "image": "/images/cybrary/lab-lfs.png",
+    "link": "https://app.cybrary.it/profile/Khan_Ahmed4504?tab=cert-completion&cert=CC-06718e24-b5aa-4f30-9cca-938b74c5049b",
+    "skills": ["linux", "file-systems"],
+    "type": "lab"
+  },
+  {
+    "id": "cybrary-linux-cli",
+    "title": "Linux CLI",
+    "image": "/images/cybrary/lab-LClibasic.png",
+    "link": "https://app.cybrary.it/profile/Khan_Ahmed4504?tab=cert-completion&cert=CC-05b12b38-7d5d-42ae-b7c5-2faf6744e682",
+    "skills": ["linux", "command-line"],
+    "type": "lab"
+  },
+  {
+    "id": "cybrary-windows-cli",
+    "title": "Windows CLI",
+    "image": "/images/cybrary/lab-WClibasic.png",
+    "link": "https://app.cybrary.it/profile/Khan_Ahmed4504?tab=cert-completion&cert=CC-5211002a-563a-4006-a477-791640a9f62b",
+    "skills": ["windows", "command-line"],
+    "type": "lab"
+  },
+  {
+    "id": "cybrary-windows-file-systems",
+    "title": "Windows File Systems",
+    "image": "/images/cybrary/lab-WFSbasic.png",
+    "link": "https://app.cybrary.it/profile/Khan_Ahmed4504?tab=cert-completion&cert=CC-781a53b9-00bd-4300-b5d6-8aa6b56267b9",
+    "skills": ["windows", "file-systems"],
+    "type": "lab"
+  }
+]

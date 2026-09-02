@@ -1,0 +1,14 @@
+[
+  {
+    "id": "academic",
+    "label": "Academic"
+  },
+  {
+    "id": "course",
+    "label": "Course"
+  },
+  {
+    "id": "lab",
+    "label": "Lab"
+  }
+]

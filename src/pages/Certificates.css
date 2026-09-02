@@ -1,63 +1,635 @@
-.cert-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* desktop: 4 cards */
-  gap: 2rem;
-  justify-items: center;
+/* =========================================
+   CERTIFICATES PAGE
+========================================= */
+
+.cert-page {
+  position: relative;
+
+  min-height: 100vh;
+
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  background:
+    radial-gradient(circle at 50% 0%, rgba(0, 255, 255, 0.12), transparent 35%),
+    radial-gradient(
+      circle at 100% 100%,
+      rgba(255, 0, 200, 0.1),
+      transparent 30%
+    ),
+    #05060a;
+
+  color: #ffffff;
 }
 
-/* Tablet */
-@media (max-width: 1200px) {
-  .cert-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
-  }
+/* =========================================
+   CYBER BACKGROUND
+========================================= */
+
+.cyber-bg {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 0;
+
+  pointer-events: none;
+
+  overflow: hidden;
 }
 
-/* Mobile */
-@media (max-width: 600px) {
-  .cert-grid {
-    grid-template-columns: 1fr; /* 1 card per row */
-  }
+/* =========================================
+   GLOW
+========================================= */
+
+.cyber-glow {
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  border-radius: 50%;
+
+  filter: blur(120px);
+
+  opacity: 0.16;
 }
-.cert-heading {
-  font-size: 2.5rem; /* thoda bada aur prominent */
-  font-weight: 800; /* bold */
-  color: #00ffff; /* electric blue */
-  text-align: center; /* center align */
-  margin-bottom: 0.5rem; /* heading ke niche gap */
-  letter-spacing: 1px; /* thoda space letters me */
-  text-shadow: 0 0 8px #00ffff, 0 0 16px rgba(0, 255, 255, 0.3); /* glow effect */
+
+.cyber-glow-one {
+  top: -220px;
+  left: 15%;
+
+  background: #00ffff;
 }
+
+.cyber-glow-two {
+  right: -200px;
+  bottom: -150px;
+
+  background: #ff00cc;
+}
+
+/* =========================================
+   CYBER GRID
+========================================= */
+
+.cyber-grid {
+  position: absolute;
+
+  inset: 0;
+
+  background-image:
+    linear-gradient(rgba(0, 255, 255, 0.055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 255, 0.055) 1px, transparent 1px);
+
+  background-size: 45px 45px;
+
+  opacity: 0.8;
+
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black,
+    rgba(0, 0, 0, 0.8),
+    transparent
+  );
+
+  mask-image: linear-gradient(
+    to bottom,
+    black,
+    rgba(0, 0, 0, 0.8),
+    transparent
+  );
+}
+
+/* =========================================
+   SCANLINES
+========================================= */
+
+.cyber-scanlines {
+  position: absolute;
+
+  inset: 0;
+
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 4px,
+    rgba(0, 255, 255, 0.018) 5px,
+    rgba(0, 255, 255, 0.018) 6px
+  );
+
+  opacity: 0.65;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.cert-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  padding: 2rem;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.cert-header {
+  text-align: center;
+
+  margin-bottom: 2.5rem;
+}
+
+/* =========================================
+   CERTIFICATION DATABASE
+========================================= */
+
+.cyber-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 0.7rem;
+  padding: 5px 11px;
+
+  border: 1px solid rgba(0, 255, 255, 0.3);
+
+  background: rgba(0, 255, 255, 0.025);
+
+  font-family: monospace;
+
+  font-size: 2.5rem;
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+
+  overflow: hidden;
+  position: relative;
+
+  box-shadow:
+    0 0 10px rgba(0, 255, 255, 0.06),
+    inset 0 0 10px rgba(0, 255, 255, 0.025);
+}
+
+/* =========================================
+   DATABASE TEXT
+========================================= */
+
+.cyber-label-text {
+  display: inline-block;
+
+  background: linear-gradient(
+    90deg,
+    #00ffff 0%,
+    #00ffff 18%,
+
+    #ffffff 30%,
+
+    #7df9ff 42%,
+
+    #8a2be2 58%,
+
+    #ff00cc 72%,
+
+    #ff4fd8 82%,
+
+    #00ffff 100%
+  );
+
+  background-size: 400% 100%;
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+  animation: databaseCyberFlow 8s ease-in-out infinite;
+
+  filter: drop-shadow(0 0 6px rgba(0, 255, 255, 0.7))
+    drop-shadow(0 0 18px rgba(255, 0, 200, 0.25));
+}
+
+/* =========================================
+   SCANNING LINE
+========================================= */
+
+.cyber-label::after {
+  content: "";
+
+  position: absolute;
+
+  left: -120%;
+
+  bottom: 0;
+
+  width: 100%;
+
+  height: 2px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #00ffff,
+    #ffffff,
+    #ff00cc,
+    transparent
+  );
+
+  box-shadow:
+    0 0 8px #00ffff,
+    0 0 15px #ff00cc;
+
+  animation: databaseScan 3.5s linear infinite;
+}
+
+/* =========================================
+   DOT
+========================================= */
+
+.label-dot {
+  width: 9px;
+  height: 9px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #00ffff;
+
+  box-shadow:
+    0 0 8px #00ffff,
+    0 0 18px #00ffff,
+    0 0 30px rgba(0, 255, 255, 0.8);
+
+  animation: pulseDot 1.8s ease-in-out infinite;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
 
 .cert-description {
-  font-size: 1.1rem; /* readable size */
-  color: #ccc; /* light grey */
-  max-width: 700px; /* line length limit */
-  margin: 0 auto 2rem auto; /* center + bottom gap */
-  line-height: 1.6; /* spacing between lines */
-  text-align: center; /* center text */
-  letter-spacing: 0.5px; /* slight letter spacing */
-  text-shadow: 0 0 4px rgba(0, 255, 255, 0.2); /* subtle glow */
+  max-width: 750px;
+
+  margin: 0 auto;
+
+  color: #a9afb8;
+
+  font-size: 1.05rem;
+
+  line-height: 1.6;
+
+  letter-spacing: 0.4px;
+
+  text-align: center;
 }
 
-/* Modal */
-.image-modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.9);
+/* =========================================
+   FILTER MODE
+========================================= */
+
+.filter-mode {
   display: flex;
+
   justify-content: center;
   align-items: center;
+
+  width: fit-content;
+
+  margin: 1.5rem auto 1rem;
+
+  border: 1px solid rgba(0, 255, 255, 0.25);
+
+  background: rgba(5, 6, 10, 0.75);
+
+  box-shadow:
+    0 0 15px rgba(0, 255, 255, 0.05),
+    inset 0 0 15px rgba(0, 255, 255, 0.03);
+}
+
+.filter-mode-btn {
+  position: relative;
+
+  min-width: 130px;
+
+  padding: 0.65rem 1.5rem;
+
+  border: none;
+
+  border-right: 1px solid rgba(0, 255, 255, 0.15);
+
+  background: transparent;
+
+  color: #666;
+
+  font-family: monospace;
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  transition:
+    color 0.35s ease,
+    background 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.filter-mode-btn:last-child {
+  border-right: none;
+}
+
+.filter-mode-btn:hover {
+  color: #00ffff;
+
+  text-shadow:
+    0 0 8px #00ffff,
+    0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.filter-mode-btn.active {
+  color: #05060a;
+
+  background: linear-gradient(90deg, #00ffff, #7df9ff);
+
+  box-shadow:
+    0 0 12px rgba(0, 255, 255, 0.35),
+    inset 0 0 12px rgba(255, 255, 255, 0.2);
+}
+
+/* =========================================
+   RESULT COUNT
+========================================= */
+
+.cert-result-count {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+
+  max-width: 1400px;
+
+  box-sizing: border-box;
+
+  margin: 0 auto 1.5rem;
+
+  padding: 0.65rem 1rem;
+
+  border-left: 2px solid #00ffff;
+  border-right: 2px solid #ff00cc;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 255, 255, 0.04),
+    rgba(255, 0, 200, 0.03)
+  );
+
+  color: #888;
+
+  font-family: monospace;
+
+  font-size: 0.75rem;
+
+  letter-spacing: 1px;
+}
+
+.cert-result-count span:first-child {
+  color: #00ffff;
+
+  text-shadow:
+    0 0 8px #00ffff,
+    0 0 16px rgba(0, 255, 255, 0.4);
+}
+
+.cert-result-count span:last-child {
+  color: #ff66dd;
+
+  text-shadow:
+    0 0 8px #ff00cc,
+    0 0 16px rgba(255, 0, 200, 0.4);
+}
+
+/* =========================================
+   GRID
+========================================= */
+
+.cert-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 2rem;
+
+  width: 100%;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+
+  align-items: stretch;
+}
+
+/* =========================================
+   EMPTY STATE
+========================================= */
+
+.cert-empty {
+  text-align: center;
+
+  padding: 4rem 1rem;
+
+  color: #888;
+}
+
+.cert-empty h3 {
+  margin: 0.8rem 0;
+
+  color: #00ffff;
+
+  font-family: monospace;
+
+  letter-spacing: 2px;
+
+  text-shadow:
+    0 0 10px #00ffff,
+    0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+.cert-empty p {
+  color: #777;
+}
+
+.empty-icon {
+  color: #ff00cc;
+
+  font-size: 2.5rem;
+
+  font-family: monospace;
+
+  text-shadow:
+    0 0 10px #ff00cc,
+    0 0 25px #ff00cc;
+}
+
+/* =========================================
+   IMAGE MODAL
+========================================= */
+
+.image-modal {
+  position: fixed;
+
+  inset: 0;
+
   z-index: 9999;
-  cursor: default; /* Finger cursor stays normal */
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem;
+
+  background: rgba(0, 0, 0, 0.92);
+
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+
   animation: fadeIn 0.25s ease;
 }
 
+.image-modal-inner {
+  position: relative;
+
+  max-width: 95vw;
+  max-height: 95vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
 .image-modal img {
-  max-width: 90%;
-  max-height: 90%;
+  display: block;
+
+  max-width: 90vw;
+  max-height: 90vh;
+
+  object-fit: contain;
+
   border-radius: 12px;
-  box-shadow: 0 0 40px rgba(0, 255, 255, 0.4);
+
+  border: 1px solid rgba(0, 255, 255, 0.35);
+
+  box-shadow:
+    0 0 20px rgba(0, 255, 255, 0.25),
+    0 0 60px rgba(0, 255, 255, 0.15);
+
   animation: zoomIn 0.25s ease;
+}
+
+/* =========================================
+   MODAL CLOSE
+========================================= */
+
+.modal-close {
+  position: absolute;
+
+  top: -45px;
+  right: -5px;
+
+  width: 35px;
+  height: 35px;
+
+  border: 1px solid #00ffff;
+
+  border-radius: 50%;
+
+  background: rgba(5, 6, 10, 0.9);
+
+  color: #00ffff;
+
+  font-size: 1.4rem;
+
+  line-height: 1;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.modal-close:hover {
+  color: #05060a;
+
+  background: #00ffff;
+
+  box-shadow:
+    0 0 15px #00ffff,
+    0 0 30px rgba(0, 255, 255, 0.5);
+}
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes databaseCyberFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  25% {
+    background-position: 35% 50%;
+  }
+
+  50% {
+    background-position: 70% 50%;
+  }
+
+  75% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes databaseScan {
+  0% {
+    left: -120%;
+  }
+
+  100% {
+    left: 120%;
+  }
+}
+
+@keyframes pulseDot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.35;
+    transform: scale(0.7);
+  }
 }
 
 @keyframes zoomIn {
@@ -65,6 +637,7 @@
     transform: scale(0.7);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -75,7 +648,83 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1200px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .cert-content {
+    padding: 1.5rem 1rem;
+  }
+
+  .cyber-label {
+    padding: 8px 12px;
+
+    font-size: 1.5rem;
+
+    letter-spacing: 2px;
+  }
+
+  .label-dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .cert-description {
+    font-size: 0.95rem;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+  }
+
+  .cert-result-count {
+    font-size: 0.65rem;
+
+    padding: 0.55rem 0.7rem;
+  }
+
+  .cyber-grid {
+    background-size: 30px 30px;
+  }
+
+  .filter-mode {
+    width: 100%;
+
+    max-width: 320px;
+  }
+
+  .filter-mode-btn {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 0.6rem 1rem;
+
+    font-size: 0.7rem;
+  }
+
+  .modal-close {
+    top: -42px;
+
+    right: 0;
   }
 }

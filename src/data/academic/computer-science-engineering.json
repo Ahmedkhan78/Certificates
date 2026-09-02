@@ -1,0 +1,44 @@
+[
+  {
+    "id": "cse-introduction-to-programming",
+    "title": "Introduction to Programming",
+    "image": "/images/Saylor/1.intro-prog-1.png",
+    "link": null,
+    "type": "academic"
+  },
+  {
+    "id": "cse-introduction-to-programming-2",
+    "title": "Introduction to Programming 2",
+    "image": "/images/Saylor/2.intro-prog-2.png",
+    "link": null,
+    "type": "academic"
+  },
+  {
+    "id": "cse-python",
+    "title": "Python",
+    "image": "/images/Saylor/3.python.png",
+    "link": null,
+    "type": "academic"
+  },
+  {
+    "id": "cse-cpp",
+    "title": "C++",
+    "image": "/images/Saylor/4.c++.png",
+    "link": null,
+    "type": "academic"
+  },
+  {
+    "id": "cse-data-structures",
+    "title": "Data Structures",
+    "image": "/images/Saylor/5.dsa.png",
+    "link": null,
+    "type": "academic"
+  },
+  {
+    "id": "cse-operating-systems",
+    "title": "Operating Systems",
+    "image": "/images/Saylor/13.os.png",
+    "link": null,
+    "type": "academic"
+  }
+]

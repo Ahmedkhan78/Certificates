@@ -1,0 +1,18 @@
+[
+  {
+    "id": "networking-ccna",
+    "title": "CCNA",
+    "image": "/images/Networking/CCNA.png",
+    "link": null,
+    "skills": ["networking"],
+    "type": "certification"
+  },
+  {
+    "id": "networking-defense-essentials",
+    "title": "Network Defense Essentials",
+    "image": "/images/Networking/Network Defense Essential.png",
+    "link": null,
+    "skills": ["networking", "cybersecurity", "network-security"],
+    "type": "certification"
+  }
+]
